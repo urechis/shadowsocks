@@ -3,19 +3,14 @@ PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 export PATH
 #=================================================================#
 #   System Required:  CentOS 6+, Debian 7+, Ubuntu 12+            #
-#   Description: One click Install Shadowsocks-Python server      #
-#   Author: Teddysun <i@teddysun.com>                             #
-#   Thanks: @clowwindy <https://twitter.com/clowwindy>            #
-#   Intro:  https://teddysun.com/342.html                         #
+#   Install Shadowsocks on your server and FUCK GFW and CCP       #
 #=================================================================#
 
 clear
 echo
 echo "#############################################################"
-echo "# One click Install Shadowsocks-Python server               #"
-echo "# Intro: https://teddysun.com/342.html                      #"
-echo "# Author: Teddysun <i@teddysun.com>                         #"
-echo "# Github: https://github.com/shadowsocks/shadowsocks        #"
+echo "# System Required:  CentOS 6+, Debian 7+, Ubuntu 12+        #"
+echo "# Install Shadowsocks on your server and FUCK GFW and CCP   #"
 echo "#############################################################"
 echo
 
@@ -163,8 +158,8 @@ pre_install(){
     fi
     # Set shadowsocks config password
     echo "Please enter password for shadowsocks-python"
-    read -p "(Default password: teddysun.com):" shadowsockspwd
-    [ -z "${shadowsockspwd}" ] && shadowsockspwd="teddysun.com"
+    read -p "(Default password: UrechisVPN@Urechis.com):" shadowsockspwd
+    [ -z "${shadowsockspwd}" ] && shadowsockspwd="UrechisVPN@Urechis.com"
     echo
     echo "---------------------------"
     echo "password = ${shadowsockspwd}"
